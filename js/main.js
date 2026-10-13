@@ -38,20 +38,6 @@
     secs.forEach(function (s) { if (s) io.observe(s); });
   }
 
-  // hero role: types each role, pauses, deletes, moves to the next. Static for reduced-motion users.
-  var rot = $("#rotator"), roles = JSON.parse(rot.getAttribute("data-roles")), ri = 0, ci = 0, deleting = false;
-  var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  function tick() {
-    if (document.hidden) { return setTimeout(tick, 500); }
-    var word = roles[ri], delay = deleting ? 35 : 75;
-    ci += deleting ? -1 : 1;
-    rot.textContent = word.slice(0, ci) || "\u00a0";
-    if (!deleting && ci === word.length) { deleting = true; delay = 1700; }
-    else if (deleting && ci === 0) { deleting = false; ri = (ri + 1) % roles.length; delay = 350; }
-    setTimeout(tick, delay);
-  }
-  if (!still) { rot.classList.add("typing"); ci = roles[0].length; deleting = true; setTimeout(tick, 1700); }
-
   // contact details are assembled here so they are not sitting in the raw HTML for scrapers
   function dec(v) { try { return atob(v); } catch (e) { return ""; } }
   $$("[data-c]").forEach(function (a) { a.setAttribute("href", dec(a.getAttribute("data-c"))); });
