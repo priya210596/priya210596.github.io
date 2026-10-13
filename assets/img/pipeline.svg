@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Pipeline: evidence sources feed a reconciler, then a draft, a review loop and a confirmed write, with a human gate between stages">
+<rect width="800" height="420" fill="#fbf1f4"/>
+<g font-family="Poppins,Helvetica,Arial,sans-serif" font-size="15" text-anchor="middle">
+<g fill="#fff" stroke="#8b1a3a" stroke-width="2">
+<rect x="30" y="40" width="150" height="46" rx="8"/><rect x="30" y="110" width="150" height="46" rx="8"/>
+<rect x="30" y="180" width="150" height="46" rx="8"/><rect x="30" y="250" width="150" height="46" rx="8"/>
+<rect x="250" y="145" width="150" height="76" rx="8"/><rect x="470" y="145" width="130" height="76" rx="8"/>
+<rect x="650" y="145" width="120" height="76" rx="8"/></g>
+<g fill="#3d0f1f"><text x="105" y="69">Tracker</text><text x="105" y="139">Code + tests</text><text x="105" y="209">Live app</text><text x="105" y="279">Existing docs</text>
+<text x="325" y="177" font-weight="600">Reconcile</text><text x="325" y="199" font-size="12">declared precedence</text>
+<text x="535" y="177" font-weight="600">Draft</text><text x="535" y="199" font-size="12">tagged claims</text>
+<text x="710" y="177" font-weight="600">Review</text><text x="710" y="199" font-size="12">no silent skips</text></g>
+<g stroke="#8b1a3a" stroke-width="2" fill="none"><path d="M180 63 L250 170"/><path d="M180 133 L250 175"/><path d="M180 203 L250 190"/><path d="M180 273 L250 200"/>
+<path d="M400 183 L470 183"/><path d="M600 183 L650 183"/></g>
+<g fill="#8b1a3a"><circle cx="435" cy="183" r="9"/><circle cx="625" cy="183" r="9"/></g>
+<rect x="330" y="330" width="260" height="50" rx="25" fill="#8b1a3a"/><text x="460" y="361" fill="#fff" font-weight="600">Confirmed write (human)</text>
+<path d="M710 221 L710 355 L590 355" stroke="#8b1a3a" stroke-width="2" fill="none"/>
+<text x="435" y="130" fill="#8b1a3a" font-size="12">gate</text><text x="625" y="130" fill="#8b1a3a" font-size="12">gate</text></g></svg>
